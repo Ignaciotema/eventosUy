@@ -262,17 +262,6 @@ mvn clean
 mvn install
 ```
 
----
-
-## 📞 Contacto y Soporte
-
-Para problemas o sugerencias, contacta al equipo de desarrollo.
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo licencia de la institución educativa.
 
 ---
 
