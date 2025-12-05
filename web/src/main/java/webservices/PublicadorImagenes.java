@@ -24,22 +24,6 @@ public interface PublicadorImagenes {
      * 
      * @param arg0
      * @param arg1
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(partName = "return")
-    @Action(input = "http://webservices/publicadorImagenes/obtenerImagenRequest", output = "http://webservices/publicadorImagenes/obtenerImagenResponse")
-    public String obtenerImagen(
-        @WebParam(name = "arg0", partName = "arg0")
-        String arg0,
-        @WebParam(name = "arg1", partName = "arg1")
-        String arg1);
-
-    /**
-     * 
-     * @param arg0
-     * @param arg1
      * @param arg2
      * @return
      *     returns boolean
@@ -54,6 +38,22 @@ public interface PublicadorImagenes {
         String arg1,
         @WebParam(name = "arg2", partName = "arg2")
         String arg2);
+
+    /**
+     * 
+     * @param arg0
+     * @param arg1
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(partName = "return")
+    @Action(input = "http://webservices/publicadorImagenes/obtenerImagenRequest", output = "http://webservices/publicadorImagenes/obtenerImagenResponse")
+    public String obtenerImagen(
+        @WebParam(name = "arg0", partName = "arg0")
+        String arg0,
+        @WebParam(name = "arg1", partName = "arg1")
+        String arg1);
 
     /**
      * 

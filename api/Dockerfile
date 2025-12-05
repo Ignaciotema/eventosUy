@@ -11,6 +11,7 @@ COPY API.jar API.jar
 EXPOSE 8080
 
 COPY datosPrueba/ /api/datosPrueba/
+COPY src/webservices/uploads /api/src/webservices/uploads/
 COPY application.properties /root/application.properties
 
 # Comando para arrancar tu API
