@@ -154,4 +154,5 @@ Estos archivos se copian automáticamente durante el build a `target/datosPrueba
 ## 📁 Carga de Datos
 
 Se pueden cargar los datos de prueba desde la interfaz Swing de la API:
+
 ![Screenshot carga de datos](Screenshot.png)
