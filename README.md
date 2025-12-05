@@ -24,6 +24,7 @@ El proyecto está dividido en dos módulos principales:
 - **Ubicación**: `/api`
 - **Tipo**: Servidor JAR independiente
 - **Tecnología**: Java 21 + JAX-WS (Web Services)
+- **Interfaz**: JavaX Swing
 - **Puerto**: 8080
 - **Descripción**: Servidor central que expone servicios web para todas las operaciones CRUD y lógica de negocio
 
@@ -134,79 +135,6 @@ Modifica estos valores si necesitas cambiar el puerto o la URL base del servidor
 
 ---
 
-## 📂 Estructura de Directorios
-
-```
-eventosUy/
-├── api/                              # Servidor backend (JAR)
-│   ├── src/
-│   │   ├── org/                      # Código generado automáticamente
-│   │   ├── logica/                   # Lógica de negocio
-│   │   ├── webservices/              # Servicios web expuestos
-│   │   ├── excepciones/              # Excepciones personalizadas
-│   │   ├── casosPrueba/              # Casos de prueba
-│   │   └── adminStation/             # Administración
-│   ├── datosPrueba/                  # Datos iniciales (CSV)
-│   ├── pom.xml                       # Configuración Maven
-│   └── target/                       # Archivos compilados
-│
-├── web/                              # Cliente web (WAR)
-│   ├── src/main/
-│   │   ├── java/                     # Código Java (Servlets)
-│   │   └── webapp/                   # Recursos web
-│   ├── pom.xml                       # Configuración Maven
-│   └── target/                       # Archivos compilados
-│
-├── apache-tomcat-11.0.13/            # Servidor Tomcat
-│   ├── bin/                          # Scripts de inicio/parada
-│   ├── conf/                         # Configuración
-│   ├── webapps/                      # Aplicaciones desplegadas
-│   └── logs/                         # Registros de eventos
-│
-├── build.sh / build.bat              # Script de compilación
-├── deploy.sh / deploy.bat            # Script de despliegue
-├── application.properties            # Configuración de la app
-└── README.md                         # Este archivo
-```
-
----
-
-## 🔄 Flujo de Desarrollo
-
-### 1. Clonar y preparar
-
-```bash
-git clone <repositorio>
-cd eventosUy
-```
-
-### 2. Compilar
-
-```bash
-# Windows
-build.bat
-
-# Linux/macOS
-./build.sh
-```
-
-### 3. Desplegar
-
-```bash
-# Windows
-deploy.bat
-
-# Linux/macOS
-./deploy.sh
-```
-
-### 4. Acceder
-
-- **Aplicación Web**: http://localhost:8081/tarea2-0.0.1-SNAPSHOT/HomeServlet
-- **Servidor API**: http://localhost:8080
-
----
-
 ## 🧪 Datos de Prueba
 
 Los datos de prueba están en formato CSV en `/api/datosPrueba/`:
@@ -223,46 +151,8 @@ Estos archivos se copian automáticamente durante el build a `target/datosPrueba
 
 ---
 
-## 📝 Dependencias Principales
+## 📁 Carga de Datos
 
-### API (Backend)
-- **Jakarta XML Web Services** - 4.0.0
-- **JAX-WS Runtime** - 4.0.0
-- **iText7 Core** - 7.2.5 (Generación de PDF)
-- **JUnit** - 4.13.2 (Testing)
+Se pueden cargar los datos de prueba desde la interfaz Swing de la API:
 
-### Web (Frontend)
-- **Jakarta XML Web Services API** - 4.0.0
-- **JAX-WS Runtime** - 4.0.0
-- **Tomcat Servlet API** - 10.1.11
-
----
-
-## 🐛 Solución de Problemas
-
-### El API no inicia
-
-- Verifica que el puerto 8080 esté disponible
-- Comprueba que Java 21+ esté instalado
-- Revisa los logs del build en `target/`
-
-### Tomcat no inicia
-
-- Verifica que el puerto 8081 esté disponible
-- Asegúrate de que la aplicación WAR se copió correctamente
-- Revisa los logs en `apache-tomcat-11.0.13/logs/`
-
-### Problemas de compilación Maven
-
-```bash
-# Limpia la caché de Maven
-mvn clean
-
-# Reintenta el build
-mvn install
-```
-
-
----
-
-**Última actualización**: 4 de diciembre de 2025
+![Screenshot carga de datos](Screenshot.png)
