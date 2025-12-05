@@ -24,6 +24,22 @@ public interface PublicadorImagenes {
      * 
      * @param arg0
      * @param arg1
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(partName = "return")
+    @Action(input = "http://webservices/publicadorImagenes/existeImagenRequest", output = "http://webservices/publicadorImagenes/existeImagenResponse")
+    public boolean existeImagen(
+        @WebParam(name = "arg0", partName = "arg0")
+        String arg0,
+        @WebParam(name = "arg1", partName = "arg1")
+        String arg1);
+
+    /**
+     * 
+     * @param arg0
+     * @param arg1
      * @param arg2
      * @return
      *     returns boolean
@@ -50,22 +66,6 @@ public interface PublicadorImagenes {
     @WebResult(partName = "return")
     @Action(input = "http://webservices/publicadorImagenes/obtenerImagenRequest", output = "http://webservices/publicadorImagenes/obtenerImagenResponse")
     public String obtenerImagen(
-        @WebParam(name = "arg0", partName = "arg0")
-        String arg0,
-        @WebParam(name = "arg1", partName = "arg1")
-        String arg1);
-
-    /**
-     * 
-     * @param arg0
-     * @param arg1
-     * @return
-     *     returns boolean
-     */
-    @WebMethod
-    @WebResult(partName = "return")
-    @Action(input = "http://webservices/publicadorImagenes/existeImagenRequest", output = "http://webservices/publicadorImagenes/existeImagenResponse")
-    public boolean existeImagen(
         @WebParam(name = "arg0", partName = "arg0")
         String arg0,
         @WebParam(name = "arg1", partName = "arg1")

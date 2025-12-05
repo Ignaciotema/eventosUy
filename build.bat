@@ -36,5 +36,5 @@ echo.
 
 echo Build completed! 
 echo JAR file: api\target\ServidorWS-0.0.1-SNAPSHOT-jar-with-dependencies.jar
-echo WAR file: web\target\tarea2-0.0.1-SNAPSHOT.war
+echo WAR file: web\target\EventosUy-1.0.war.war
 pause

@@ -1,0 +1,28 @@
+Ref;EdicionEvento;Nombre;Descripcion;Costo;Cupo
+TR01;EDEV01;General;Acceso general a Montevideo Rock (2 días);1500;2000
+TR02;EDEV01;VIP;Incluye backstage + acceso preferencial;4000;200
+TR03;EDEV02;Corredor 42K;Inscripción a la maratón completa;1200;499
+TR04;EDEV02;Corredor 21K;Inscripción a la media maratón;800;700
+TR05;EDEV02;Corredor 10K;Inscripción a la carrera 10K;500;1000
+TR06;EDEV03;Corredor 42K;Inscripción a la maratón completa;1000;300
+TR07;EDEV03;Corredor 21K;Inscripción a la media maratón;500;500
+TR08;EDEV04;Corredor 42K;Inscripción a la maratón completa;1100;450
+TR09;EDEV04;Corredor 21K;Inscripción a la media maratón;900;750
+TR10;EDEV04;Corredor 10K;Inscripción a la carrera 10K;650;1400
+TR11;EDEV05;General;Entrada para los 4 días de Montevideo Comics;600;1500
+TR12;EDEV05;Cosplayer;Entrada especial con acreditación para concurso cosplay;300;50
+TR13;EDEV06;General;Entrada para los 4 días de Montevideo Comics;800;1000
+TR14;EDEV06;Cosplayer;Entrada especial con acreditación para concurso cosplay;500;100
+TR15;EDEV07;General;Acceso a la exposición agropecuaria;300;5000
+TR16;EDEV07;Empresarial;Acceso para empresas + networking;2000;5
+TR17;EDEV08;Full;Acceso ilimitado + Cena de gala;1800;300
+TR18;EDEV08;General;Acceso general;1500;500
+TR19;EDEV08;Estudiante;Acceso para estudiantes;1000;50
+TR20;EDEV09;Full;Acceso ilimitado + Cena de gala;750;550
+TR21;EDEV09;General;Acceso general;500;400
+TR22;EDEV09;Estudiante;Acceso para estudiantes;250;400
+TR23;EDEV10;Full;Acceso ilimitado + Cena de gala;900;30
+TR24;EDEV10;General;Acceso general;650;5
+TR25;EDEV10;Estudiante;Acceso para estudiantes;300;1
+TR26;EDEV11;Full;Acceso a todos los eventos de la semana;450;50
+TR27;EDEV11;Visitante;Acceso parcial a los eventos de la semana;150;25

@@ -17,7 +17,7 @@ import jakarta.xml.ws.WebServiceFeature;
  * Generated source version: 3.0
  * 
  */
-@WebServiceClient(name = "publicadorImagenesService", targetNamespace = "http://webservices/", wsdlLocation = "https://eventosuy-977340730020.us-central1.run.app/publicadorImagenes?wsdl")
+@WebServiceClient(name = "publicadorImagenesService", targetNamespace = "http://webservices/", wsdlLocation = "http://localhost:8080/publicadorImagenes?wsdl")
 public class PublicadorImagenesService
     extends Service
 {
@@ -30,7 +30,7 @@ public class PublicadorImagenesService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("https://eventosuy-977340730020.us-central1.run.app/publicadorImagenes?wsdl");
+            url = new URL("http://localhost:8080/publicadorImagenes?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

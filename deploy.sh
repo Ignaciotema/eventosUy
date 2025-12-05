@@ -9,7 +9,7 @@ echo "Apagando Tomcat..."
 "$CATALINA_HOME/bin/shutdown.sh"
 
 echo "Copiando WAR a Tomcat..."
-cp "web/target/tarea2-0.0.1-SNAPSHOT.war" "$CATALINA_HOME/webapps/"
+cp "web/target/EventosUy-1.0.war" "$CATALINA_HOME/webapps/"
 
 echo "Iniciando Tomcat..."
 "$CATALINA_HOME/bin/startup.sh"
@@ -17,7 +17,7 @@ echo "Iniciando Tomcat..."
 echo "Esperando 5 segundos..."
 sleep 5
 
-xdg-open "http://localhost:8081/tarea2-0.0.1-SNAPSHOT/HomeServlet" 2>/dev/null || \
-open "http://localhost:8081/tarea2-0.0.1-SNAPSHOT/HomeServlet" 2>/dev/null ||
-start "http://localhost:8081/tarea2-0.0.1-SNAPSHOT/HomeServlet" 2>/dev/null
+xdg-open "http://localhost:8081/EventosUy-1.0/HomeServlet" 2>/dev/null || \
+open "http://localhost:8081/EventosUy-1.0/HomeServlet" 2>/dev/null ||
+start "http://localhost:8081/EventosUy-1.0/HomeServlet" 2>/dev/null
 
