@@ -1,0 +1,94 @@
+/* Centrar solo el contenedor de perfil, no el header */
+body>.contenedor-perfil {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	/* NO align-items: center; */
+}
+
+.contenedor-perfil {
+	display: flex;
+	flex-direction: column;
+	padding-top: 40px;
+	background-color: #e3e3e3;
+	padding-left: 40px;
+	padding-right: 40px;
+	width: 50%;
+	height: 70%;
+	border-radius: 50px;
+}
+
+.contenedor-datosUsuario {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.datosUsuario {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.rol {
+	font-size: 20px;
+}
+
+.contenedor-NickRolUser {
+	padding-bottom: 20px;
+	font-size: 40px;
+}
+
+.misEdiciones {
+	padding-top: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.contenedor-ediciones {
+	display: flex;
+	flex-direction: column;
+}
+
+.contenedor-edicion {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.nombreEdicion {
+	font-size: 20px;
+}
+
+.nombreEdicion:hover {
+	text-decoration: underline;
+}
+
+.foto-edicion {
+	border-radius: 40px;
+	height: 100px;
+	width: 100px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	object-fit: cover;
+	object-position: center;
+	border: 2px solid #000000;
+}
+
+.contenedor-edicion.aceptada .foto-edicion {
+	border-color: green;
+	border-width: 4px;
+}
+
+.contenedor-edicion.rechazada .foto-edicion {
+	border-color: red;
+	border-width: 4px;
+}
+
+.contenedor-edicion.ingresada .foto-edicion {
+	border-color: yellow;
+	border-width: 4px;
+}

@@ -1,0 +1,173 @@
+/* Unifica el formato de los textos de los acordeones de tipos de registro y patrocinadores */
+.registro-info {
+	font-size: 1.2rem !important;
+	line-height: 1.6 !important;
+	margin-bottom: 1rem !important;
+	color: #1e1e1e !important;
+	font-family: Inter, Arial, sans-serif !important;
+}
+
+.header {
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+	box-sizing: border-box;
+	height: 90px;
+	overflow: hidden;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 32px;
+	gap: 0px;
+	text-align: left;
+	font-size: 16px;
+	color: #1e1e1e;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.09);
+}
+
+.block {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 24px;
+}
+
+.logo {
+	width: 60px;
+}
+
+/* Estilos para las cards de ediciones - estilo index */
+.titulo-ediciones {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+	text-align: left;
+	color: #1e1e1e;
+}
+
+.carta-edicion {
+	width: 100%;
+	border-radius: 8px;
+	background-color: #fff;
+	border: 1px solid #d9d9d9;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 24px;
+	gap: 24px;
+	min-width: 300px;
+	font-family: Inter;
+}
+
+.carta-edicion:hover {
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+.carta-edicion .text-heading {
+	align-self: stretch;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.carta-edicion .search-text-heading {
+	flex: 1;
+	position: relative;
+	letter-spacing: -0.02em;
+	line-height: 120%;
+	font-weight: 600;
+	font-size: 24px;
+	color: #1e1e1e;
+}
+
+.carta-edicion .avatar-block {
+	align-self: stretch;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 12px;
+	font-size: 16px;
+	color: #b3b3b3;
+}
+
+.carta-edicion .avatar {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+.carta-edicion .shape-icon {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	right: 0%;
+	bottom: 0%;
+	left: 0%;
+	max-width: 100%;
+	overflow: hidden;
+	max-height: 100%;
+	object-fit: cover;
+}
+
+.carta-edicion .description {
+	align-self: stretch;
+	position: relative;
+	line-height: 140%;
+	color: #b3b3b3;
+}
+
+.search {
+	width: 43%;
+	padding: 12px 16px;
+	border: 1px solid #d9d9d9;
+	border-radius: 999999px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+/* Estilos para las categorías - exactamente como en index */
+.carta-categorias {
+	border-radius: 8px;
+	background-color: #fff;
+	height: 432px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 10px;
+	gap: 10px;
+	color: #000;
+	font-family: Inter;
+}
+
+.categorias {
+	font-weight: bold;
+}
+
+.lista-categoria {
+	font-size: 16px;
+	color: #1e1e1e;
+	font-family: Inter;
+}
+
+/* Estilos para barra de búsqueda centrada */
+.busq {
+	width: 35%;
+	padding: 12px 16px;
+	border: 1px solid #d9d9d9;
+	border-radius: 999999px;
+	font-size: 16px;
+	box-sizing: border-box;
+}

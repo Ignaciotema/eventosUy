@@ -1,0 +1,9 @@
+Ref;Nombre;Descripcion;Sigla;FechaAlta;Categorias;Imagen;Finalizado;Visitas
+EV01;Conferencia de Tecnología;Evento sobre innovación tecnológica;CONFTEC;10/01/2025;CA01, CA02;-;No;2
+EV02;Feria del Libro;Encuentro anual de literatura;FERLIB;01/02/2025;CA03, CA04;IMG-EV02.jpeg;No;10
+EV03;Montevideo Rock;Festival de rock con artistas nacionales e internacionales;MONROCK;15/03/2023;CA04, CA05;IMG-EV03.jpeg;No;25
+EV04;Maratón de Montevideo;Competencia deportiva anual en la capital;MARATON;01/01/2022;CA06, CA07;IMG-EV04.png;No;13
+EV05;Montevideo Comics;Convención de historietas, cine y cultura geek;COMICS;10/04/2024;CA04, CA08;IMG-EV05.png;No;5
+EV06;Expointer Uruguay;Exposición internacional agropecuaria y ganadera;EXPOAGRO;12/12/2024;CA09, CA10;IMG-EV06.png;No;10
+EV07;Montevideo Fashion Week;Pasarela de moda uruguaya e internacional;MFASHION;20/07/2025;CA04, CA11;-;No;8
+EV08;Global;Aventureros en grupo;GBL;01/01/2025;CA04;IMG-EV08.jpeg;Si;20
