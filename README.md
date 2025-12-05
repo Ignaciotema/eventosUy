@@ -75,7 +75,7 @@ build.bat
 
 2. **Compila el módulo `web`**:
    - Ejecuta `mvn clean install`
-   - Genera `tarea2-0.0.1-SNAPSHOT.war`
+   - Genera `EventosUy-1.0.war.war`
 
 3. **Copia datos de prueba**:
    - Copia archivos CSV a `target/datosPrueba/`
@@ -85,7 +85,7 @@ build.bat
 
 ```
 ✓ api/target/ServidorWS-0.0.1-SNAPSHOT-jar-with-dependencies.jar
-✓ web/target/tarea2-0.0.1-SNAPSHOT.war
+✓ web/target/EventosUy-1.0.war
 ```
 
 ---
@@ -118,7 +118,7 @@ deploy.bat
    - Inicia Tomcat
 
 4. **Abre la aplicación**:
-   - URL: `http://localhost:8081/tarea2-0.0.1-SNAPSHOT/HomeServlet`
+   - URL: `http://localhost:8081/EventosUy-1.0.war/HomeServlet`
 
 ---
 
