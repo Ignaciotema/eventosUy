@@ -28,7 +28,7 @@
 
     <img class="section-icon" alt="" src="assets/images/section-image.jpg">
     
-    <div class="row row-cols-2 row-cols-md-3 w-100 justify-content-center mt-4 dflex">
+    <div class="row row-cols-1 row-cols-md-3 justify-content-center mt-4 dflex mx-1">
 
         <div class="carta-categorias align-items-center col-12 col-md-8 col-xl-3 h-100 my-3">
             <h3 class="categorias fw-bold">Categorías</h3>
@@ -43,13 +43,16 @@
             </div>
         </div>
 
-<div class="container col-12 col-md-8">
-   <div class="row container m-2">
+<div class="col-12 col-md-8 mb-3">
+	<h3 class="d-flex justify-content-center fw-bold my-3">Eventos Recientes</h3>
+   <div class="row m-2">
    		
             <div class="row gx-0 g-xl-2 gy-2">
                 
 			<% 
 			List<DtDetalleEvento> eventos = (List<DtDetalleEvento>) request.getAttribute("eventos_recientes");
+			if (eventos == null || eventos.isEmpty()) { %>
+				<div class="alert alert-light" role="alert">No hay eventos recientes disponibles.</div> <% }
 			for (DtDetalleEvento evento : eventos) { %>
 				<div class="col-xl-6">
 				<a class="text-decoration-none" href="detalleEvento?nombre=<%= evento.getNombre() %>"

@@ -1,0 +1,1054 @@
+06-Dec-2025 02:36:31.755 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 02:36:31.760 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 02:36:32.724 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 02:36:32.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 02:36:32.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 02:36:32.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 02:36:32.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 02:36:32.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 02:36:32.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 02:36:32.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 02:36:32.731 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 02:36:32.731 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:36:32.731 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:36:32.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 02:36:32.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 02:36:32.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 02:36:32.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 02:36:32.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 02:36:32.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 02:36:32.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 02:36:32.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 02:36:32.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 02:36:32.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 02:36:32.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:36:32.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:36:32.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 02:36:32.753 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 02:36:33.022 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 02:36:33.043 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [514] milliseconds
+06-Dec-2025 02:36:33.103 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 02:36:33.103 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 02:36:33.126 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 02:36:33.147 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 02:36:35.752 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:36:35.797 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [2.670] ms
+06-Dec-2025 02:36:35.799 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 02:36:37.466 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:36:37.474 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.675] ms
+06-Dec-2025 02:36:37.475 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 02:36:37.528 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [52] ms
+06-Dec-2025 02:36:37.528 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 02:36:37.565 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [36] ms
+06-Dec-2025 02:36:37.565 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 02:36:37.590 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [25] ms
+06-Dec-2025 02:36:37.594 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 02:36:37.639 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4595] milliseconds
+06-Dec-2025 02:38:12.443 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 02:38:12.447 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 02:38:13.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 02:38:13.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 02:38:13.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 02:38:13.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 02:38:13.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 02:38:13.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 02:38:13.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 02:38:13.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 02:38:13.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 02:38:13.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:38:13.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:38:13.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 02:38:13.333 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 02:38:13.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 02:38:13.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 02:38:13.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 02:38:13.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 02:38:13.334 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 02:38:13.335 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 02:38:13.335 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 02:38:13.335 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 02:38:13.335 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:38:13.335 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:38:13.335 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 02:38:13.345 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 02:38:13.599 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 02:38:13.622 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [465] milliseconds
+06-Dec-2025 02:38:13.668 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 02:38:13.668 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 02:38:13.688 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 02:38:13.714 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 02:38:16.798 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:38:16.852 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.161] ms
+06-Dec-2025 02:38:16.853 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 02:38:18.531 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:38:18.539 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.686] ms
+06-Dec-2025 02:38:18.540 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 02:38:18.589 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [48] ms
+06-Dec-2025 02:38:18.589 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 02:38:18.623 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [34] ms
+06-Dec-2025 02:38:18.623 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 02:38:18.646 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [23] ms
+06-Dec-2025 02:38:18.651 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 02:38:18.671 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5047] milliseconds
+06-Dec-2025 02:38:34.339 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 02:38:34.343 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 02:38:35.175 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 02:38:35.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 02:38:35.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 02:38:35.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 02:38:35.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 02:38:35.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 02:38:35.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 02:38:35.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 02:38:35.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 02:38:35.181 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:38:35.182 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:38:35.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 02:38:35.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 02:38:35.192 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 02:38:35.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 02:38:35.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 02:38:35.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 02:38:35.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 02:38:35.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 02:38:35.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 02:38:35.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 02:38:35.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:38:35.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:38:35.194 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 02:38:35.202 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 02:38:35.453 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 02:38:35.474 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [459] milliseconds
+06-Dec-2025 02:38:35.517 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 02:38:35.517 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 02:38:35.534 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 02:38:38.062 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:38:38.116 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [2.579] ms
+06-Dec-2025 02:38:38.118 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 02:38:39.906 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:38:39.914 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.795] ms
+06-Dec-2025 02:38:39.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 02:38:39.961 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [47] ms
+06-Dec-2025 02:38:39.961 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 02:38:39.995 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [33] ms
+06-Dec-2025 02:38:39.995 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 02:38:40.018 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [22] ms
+06-Dec-2025 02:38:40.023 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 02:38:40.045 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4569] milliseconds
+06-Dec-2025 02:39:12.732 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 02:39:12.737 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 02:39:13.587 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 02:39:13.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 02:39:13.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 02:39:13.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 02:39:13.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 02:39:13.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 02:39:13.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 02:39:13.592 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 02:39:13.592 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 02:39:13.592 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:39:13.592 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:39:13.602 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 02:39:13.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 02:39:13.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 02:39:13.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 02:39:13.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 02:39:13.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 02:39:13.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 02:39:13.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 02:39:13.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 02:39:13.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 02:39:13.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:39:13.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:39:13.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 02:39:13.614 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 02:39:13.882 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 02:39:13.907 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [484] milliseconds
+06-Dec-2025 02:39:13.972 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 02:39:13.972 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 02:39:13.993 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 02:39:14.014 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 02:39:17.092 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:39:17.144 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.148] ms
+06-Dec-2025 02:39:17.146 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 02:39:18.835 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:39:18.843 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.696] ms
+06-Dec-2025 02:39:18.844 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 02:39:18.895 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [51] ms
+06-Dec-2025 02:39:18.895 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 02:39:18.928 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [33] ms
+06-Dec-2025 02:39:18.929 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 02:39:18.957 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [28] ms
+06-Dec-2025 02:39:18.961 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 02:39:18.984 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5074] milliseconds
+06-Dec-2025 02:40:35.261 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 02:40:35.266 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 02:40:36.097 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 02:40:36.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 02:40:36.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 02:40:36.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 02:40:36.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 02:40:36.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 02:40:36.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 02:40:36.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 02:40:36.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 02:40:36.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:40:36.103 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:40:36.114 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 02:40:36.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 02:40:36.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 02:40:36.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 02:40:36.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 02:40:36.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 02:40:36.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 02:40:36.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 02:40:36.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 02:40:36.115 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 02:40:36.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:40:36.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:40:36.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 02:40:36.124 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 02:40:36.364 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 02:40:36.386 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [450] milliseconds
+06-Dec-2025 02:40:36.432 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 02:40:36.433 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 02:40:36.452 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 02:40:36.472 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 02:40:39.580 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:40:39.632 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.177] ms
+06-Dec-2025 02:40:39.633 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 02:40:41.394 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:40:41.402 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.769] ms
+06-Dec-2025 02:40:41.403 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 02:40:41.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [55] ms
+06-Dec-2025 02:40:41.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 02:40:41.494 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [36] ms
+06-Dec-2025 02:40:41.495 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 02:40:41.521 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [27] ms
+06-Dec-2025 02:40:41.526 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 02:40:41.551 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5164] milliseconds
+06-Dec-2025 02:41:18.764 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 02:41:18.768 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 02:41:19.692 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 02:41:19.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 02:41:19.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 02:41:19.696 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 02:41:19.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 02:41:19.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 02:41:19.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 02:41:19.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 02:41:19.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 02:41:19.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:41:19.697 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:41:19.709 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 02:41:19.709 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 02:41:19.709 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 02:41:19.710 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 02:41:19.710 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 02:41:19.710 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 02:41:19.710 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 02:41:19.710 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 02:41:19.710 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 02:41:19.710 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 02:41:19.711 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:41:19.711 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 02:41:19.711 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 02:41:19.718 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 02:41:19.962 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 02:41:19.982 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [460] milliseconds
+06-Dec-2025 02:41:20.026 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 02:41:20.026 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 02:41:20.051 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 02:41:20.074 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 02:41:23.126 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:41:23.178 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.124] ms
+06-Dec-2025 02:41:23.179 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 02:41:24.861 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 02:41:24.868 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.689] ms
+06-Dec-2025 02:41:24.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 02:41:24.918 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [49] ms
+06-Dec-2025 02:41:24.919 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 02:41:24.956 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [37] ms
+06-Dec-2025 02:41:24.957 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 02:41:24.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [26] ms
+06-Dec-2025 02:41:24.987 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 02:41:25.008 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5025] milliseconds
+06-Dec-2025 03:00:19.222 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 03:00:19.226 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 03:00:20.085 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 03:00:20.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 03:00:20.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 03:00:20.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 03:00:20.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 03:00:20.089 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 03:00:20.090 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 03:00:20.090 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 03:00:20.090 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 03:00:20.090 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:00:20.090 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:00:20.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 03:00:20.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 03:00:20.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 03:00:20.100 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 03:00:20.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 03:00:20.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 03:00:20.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 03:00:20.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 03:00:20.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 03:00:20.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 03:00:20.101 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:00:20.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:00:20.102 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 03:00:20.110 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 03:00:20.360 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 03:00:20.380 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [458] milliseconds
+06-Dec-2025 03:00:20.424 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 03:00:20.425 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 03:00:20.445 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 03:00:20.465 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 03:00:23.536 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 03:00:23.589 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.141] ms
+06-Dec-2025 03:00:23.590 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 03:00:25.469 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 03:00:25.476 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.886] ms
+06-Dec-2025 03:00:25.477 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 03:00:25.525 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [48] ms
+06-Dec-2025 03:00:25.526 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 03:00:25.566 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [41] ms
+06-Dec-2025 03:00:25.566 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 03:00:25.592 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [25] ms
+06-Dec-2025 03:00:25.597 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 03:00:25.622 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5239] milliseconds
+06-Dec-2025 03:02:52.229 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 03:02:52.233 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 03:02:53.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 03:02:53.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 03:02:53.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 03:02:53.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 03:02:53.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 03:02:53.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 03:02:53.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 03:02:53.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 03:02:53.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 03:02:53.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:02:53.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:02:53.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 03:02:53.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 03:02:53.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 03:02:53.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 03:02:53.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 03:02:53.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 03:02:53.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 03:02:53.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 03:02:53.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 03:02:53.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 03:02:53.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:02:53.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:02:53.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 03:02:53.253 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 03:02:53.561 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 03:02:53.584 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [579] milliseconds
+06-Dec-2025 03:02:53.640 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 03:02:53.640 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 03:02:53.659 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 03:02:53.680 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 03:02:56.788 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 03:02:56.847 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.184] ms
+06-Dec-2025 03:02:56.849 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 03:02:58.535 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 03:02:58.541 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.692] ms
+06-Dec-2025 03:02:58.542 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 03:02:58.588 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [46] ms
+06-Dec-2025 03:02:58.589 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 03:02:58.623 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [33] ms
+06-Dec-2025 03:02:58.624 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 03:02:58.649 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [25] ms
+06-Dec-2025 03:02:58.652 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 03:02:58.674 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5088] milliseconds
+06-Dec-2025 03:31:13.563 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 03:31:13.567 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 03:31:14.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 03:31:14.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 03:31:14.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 03:31:14.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 03:31:14.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 03:31:14.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 03:31:14.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 03:31:14.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 03:31:14.422 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 03:31:14.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:31:14.423 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:31:14.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 03:31:14.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 03:31:14.435 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 03:31:14.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 03:31:14.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 03:31:14.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 03:31:14.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 03:31:14.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 03:31:14.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 03:31:14.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 03:31:14.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:31:14.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:31:14.437 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 03:31:14.446 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 03:31:14.710 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 03:31:14.728 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [476] milliseconds
+06-Dec-2025 03:31:14.777 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 03:31:14.778 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 03:31:14.797 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 03:31:14.817 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 03:31:17.991 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 03:31:18.041 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.241] ms
+06-Dec-2025 03:31:18.042 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 03:31:19.762 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 03:31:19.770 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.727] ms
+06-Dec-2025 03:31:19.770 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 03:31:19.816 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [46] ms
+06-Dec-2025 03:31:19.816 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 03:31:19.848 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [32] ms
+06-Dec-2025 03:31:19.849 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 03:31:19.870 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [21] ms
+06-Dec-2025 03:31:19.874 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 03:31:19.897 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5166] milliseconds
+06-Dec-2025 03:48:38.500 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 03:48:38.505 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 03:48:39.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 03:48:39.328 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 03:48:39.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 03:48:39.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 03:48:39.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 03:48:39.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 03:48:39.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 03:48:39.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 03:48:39.330 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 03:48:39.330 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:48:39.330 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:48:39.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 03:48:39.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 03:48:39.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 03:48:39.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 03:48:39.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 03:48:39.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 03:48:39.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 03:48:39.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 03:48:39.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 03:48:39.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 03:48:39.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:48:39.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 03:48:39.341 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 03:48:39.349 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 03:48:39.604 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 03:48:39.632 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [476] milliseconds
+06-Dec-2025 03:48:39.686 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 03:48:39.687 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 03:48:39.707 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 03:48:39.728 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 03:48:42.893 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 03:48:42.950 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.240] ms
+06-Dec-2025 03:48:42.952 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 03:48:44.782 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 03:48:44.789 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.837] ms
+06-Dec-2025 03:48:44.790 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 03:48:44.842 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [52] ms
+06-Dec-2025 03:48:44.843 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 03:48:44.880 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [37] ms
+06-Dec-2025 03:48:44.880 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 03:48:44.912 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [32] ms
+06-Dec-2025 03:48:44.918 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 03:48:44.940 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5307] milliseconds
+06-Dec-2025 04:05:40.717 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 04:05:40.722 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 04:05:41.513 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 04:05:41.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 04:05:41.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 04:05:41.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 04:05:41.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 04:05:41.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 04:05:41.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 04:05:41.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 04:05:41.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 04:05:41.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:05:41.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:05:41.530 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 04:05:41.530 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 04:05:41.530 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 04:05:41.530 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 04:05:41.530 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 04:05:41.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 04:05:41.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 04:05:41.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 04:05:41.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 04:05:41.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 04:05:41.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:05:41.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:05:41.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 04:05:41.539 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 04:05:41.821 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 04:05:41.845 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [496] milliseconds
+06-Dec-2025 04:05:41.898 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 04:05:41.898 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 04:05:41.920 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 04:05:41.940 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 04:05:44.902 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:05:44.954 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.031] ms
+06-Dec-2025 04:05:44.956 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 04:05:46.637 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:05:46.645 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.690] ms
+06-Dec-2025 04:05:46.646 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 04:05:46.693 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [46] ms
+06-Dec-2025 04:05:46.693 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 04:05:46.730 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [37] ms
+06-Dec-2025 04:05:46.731 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 04:05:46.755 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [24] ms
+06-Dec-2025 04:05:46.760 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 04:05:46.782 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4933] milliseconds
+06-Dec-2025 04:10:11.783 WARNING [http-nio-0.0.0.0-8081-exec-7] org.apache.catalina.webresources.AbstractFileResourceSet.logIgnoredSymlink Resource for web application [/EventosUy-1.0] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+06-Dec-2025 04:18:59.592 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 04:18:59.597 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 04:19:00.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 04:19:00.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 04:19:00.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 04:19:00.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 04:19:00.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 04:19:00.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 04:19:00.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 04:19:00.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 04:19:00.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 04:19:00.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:19:00.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:19:00.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 04:19:00.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 04:19:00.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 04:19:00.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 04:19:00.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 04:19:00.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 04:19:00.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 04:19:00.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 04:19:00.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 04:19:00.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 04:19:00.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:19:00.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:19:00.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 04:19:00.418 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 04:19:00.675 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 04:19:00.698 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [476] milliseconds
+06-Dec-2025 04:19:00.746 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 04:19:00.747 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 04:19:00.764 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 04:19:00.784 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 04:19:03.881 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:19:03.933 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.166] ms
+06-Dec-2025 04:19:03.934 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 04:19:05.666 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:19:05.674 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.739] ms
+06-Dec-2025 04:19:05.674 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 04:19:05.721 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [47] ms
+06-Dec-2025 04:19:05.721 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 04:19:05.761 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [40] ms
+06-Dec-2025 04:19:05.762 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 04:19:05.788 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [27] ms
+06-Dec-2025 04:19:05.792 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 04:19:05.816 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5116] milliseconds
+06-Dec-2025 04:20:23.631 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 04:20:23.636 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 04:20:24.449 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 04:20:24.452 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 04:20:24.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 04:20:24.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 04:20:24.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 04:20:24.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 04:20:24.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 04:20:24.453 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 04:20:24.454 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 04:20:24.454 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:20:24.454 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:20:24.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 04:20:24.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 04:20:24.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 04:20:24.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 04:20:24.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 04:20:24.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 04:20:24.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 04:20:24.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 04:20:24.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 04:20:24.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 04:20:24.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:20:24.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:20:24.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 04:20:24.473 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 04:20:24.782 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 04:20:24.803 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [512] milliseconds
+06-Dec-2025 04:20:24.850 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 04:20:24.850 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 04:20:24.869 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 04:20:24.888 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 04:20:27.927 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:20:27.980 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.107] ms
+06-Dec-2025 04:20:27.981 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 04:20:29.793 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:20:29.800 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.819] ms
+06-Dec-2025 04:20:29.800 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 04:20:29.846 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [46] ms
+06-Dec-2025 04:20:29.846 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 04:20:29.881 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [34] ms
+06-Dec-2025 04:20:29.881 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 04:20:29.906 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [25] ms
+06-Dec-2025 04:20:29.910 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 04:20:29.929 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5124] milliseconds
+06-Dec-2025 04:29:20.670 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 04:29:20.675 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 04:29:21.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 04:29:21.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 04:29:21.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 04:29:21.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 04:29:21.467 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 04:29:21.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 04:29:21.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 04:29:21.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 04:29:21.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 04:29:21.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:29:21.468 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:29:21.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 04:29:21.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 04:29:21.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 04:29:21.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 04:29:21.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 04:29:21.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 04:29:21.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 04:29:21.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 04:29:21.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 04:29:21.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 04:29:21.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:29:21.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:29:21.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 04:29:21.487 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 04:29:21.731 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 04:29:21.753 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [448] milliseconds
+06-Dec-2025 04:29:21.801 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 04:29:21.802 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 04:29:21.821 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 04:29:21.838 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 04:29:24.847 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:29:24.896 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.072] ms
+06-Dec-2025 04:29:24.898 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 04:29:26.544 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:29:26.552 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.655] ms
+06-Dec-2025 04:29:26.553 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 04:29:26.602 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [48] ms
+06-Dec-2025 04:29:26.602 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 04:29:26.636 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [34] ms
+06-Dec-2025 04:29:26.637 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 04:29:26.659 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [22] ms
+06-Dec-2025 04:29:26.663 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 04:29:26.684 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4929] milliseconds
+06-Dec-2025 04:31:42.117 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 04:31:42.121 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 04:31:43.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 04:31:43.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 04:31:43.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 04:31:43.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 04:31:43.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 04:31:43.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 04:31:43.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 04:31:43.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 04:31:43.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 04:31:43.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:31:43.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:31:43.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 04:31:43.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 04:31:43.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 04:31:43.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 04:31:43.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 04:31:43.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 04:31:43.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 04:31:43.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 04:31:43.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 04:31:43.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 04:31:43.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:31:43.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:31:43.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 04:31:43.054 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 04:31:43.319 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 04:31:43.342 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [493] milliseconds
+06-Dec-2025 04:31:43.392 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 04:31:43.392 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 04:31:43.415 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 04:31:43.434 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 04:31:46.272 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:31:46.322 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [2.905] ms
+06-Dec-2025 04:31:46.323 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 04:31:48.108 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:31:48.114 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.791] ms
+06-Dec-2025 04:31:48.114 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 04:31:48.167 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [53] ms
+06-Dec-2025 04:31:48.167 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 04:31:48.204 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [37] ms
+06-Dec-2025 04:31:48.204 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 04:31:48.227 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [23] ms
+06-Dec-2025 04:31:48.231 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 04:31:48.252 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4908] milliseconds
+06-Dec-2025 04:38:08.845 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 04:38:08.850 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 04:38:09.772 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 04:38:09.776 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 04:38:09.777 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 04:38:09.777 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 04:38:09.777 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 04:38:09.777 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 04:38:09.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 04:38:09.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 04:38:09.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 04:38:09.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:38:09.778 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:38:09.787 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 04:38:09.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 04:38:09.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 04:38:09.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 04:38:09.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 04:38:09.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 04:38:09.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 04:38:09.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 04:38:09.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 04:38:09.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 04:38:09.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:38:09.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:38:09.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 04:38:09.796 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 04:38:10.041 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 04:38:10.063 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [463] milliseconds
+06-Dec-2025 04:38:10.113 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 04:38:10.113 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 04:38:10.137 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 04:38:10.159 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 04:38:13.252 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:38:13.306 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.166] ms
+06-Dec-2025 04:38:13.308 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 04:38:15.032 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:38:15.040 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.732] ms
+06-Dec-2025 04:38:15.041 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 04:38:15.088 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [48] ms
+06-Dec-2025 04:38:15.089 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 04:38:15.123 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [35] ms
+06-Dec-2025 04:38:15.123 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 04:38:15.145 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [22] ms
+06-Dec-2025 04:38:15.149 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 04:38:15.169 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5104] milliseconds
+06-Dec-2025 04:48:54.071 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+06-Dec-2025 04:48:54.076 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:589)
+		at java.base/sun.nio.ch.Net.connect(Net.java:578)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:751)
+		at java.base/java.net.Socket.connect(Socket.java:686)
+		at java.base/java.net.Socket.<init>(Socket.java:555)
+		at java.base/java.net.Socket.<init>(Socket.java:324)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:652)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:387)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+06-Dec-2025 04:48:54.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/11.0.13
+06-Dec-2025 04:48:54.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 10 2025 13:57:31 UTC
+06-Dec-2025 04:48:54.933 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     11.0.13.0
+06-Dec-2025 04:48:54.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 11
+06-Dec-2025 04:48:54.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+06-Dec-2025 04:48:54.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+06-Dec-2025 04:48:54.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-21
+06-Dec-2025 04:48:54.934 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       21.0.8+12-LTS-250
+06-Dec-2025 04:48:54.935 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+06-Dec-2025 04:48:54.935 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:48:54.935 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:48:54.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\conf\logging.properties
+06-Dec-2025 04:48:54.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Dec-2025 04:48:54.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+06-Dec-2025 04:48:54.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Dec-2025 04:48:54.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+06-Dec-2025 04:48:54.947 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+06-Dec-2025 04:48:54.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+06-Dec-2025 04:48:54.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Dec-2025 04:48:54.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Dec-2025 04:48:54.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --enable-native-access=ALL-UNNAMED
+06-Dec-2025 04:48:54.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:48:54.948 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13
+06-Dec-2025 04:48:54.949 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\temp
+06-Dec-2025 04:48:54.959 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: [C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\ignac\AppData\Local\Programs\Microsoft VS Code\bin;.]
+06-Dec-2025 04:48:55.209 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-0.0.0.0-8081"]
+
+06-Dec-2025 04:48:55.228 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [457] milliseconds
+06-Dec-2025 04:48:55.275 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+06-Dec-2025 04:48:55.275 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.13]
+06-Dec-2025 04:48:55.294 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] de la aplicación web
+06-Dec-2025 04:48:55.313 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0] was found with a last modified time that did not match the associated WAR. It will be deleted.
+06-Dec-2025 04:48:58.406 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:48:58.457 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\EventosUy-1.0.war] has finished in [3.160] ms
+06-Dec-2025 04:48:58.460 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] de la aplicación web
+06-Dec-2025 04:49:00.260 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+06-Dec-2025 04:49:00.267 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\tarea2-0.0.1-SNAPSHOT.war] has finished in [1.807] ms
+06-Dec-2025 04:49:00.267 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] de la aplicación web
+06-Dec-2025 04:49:00.316 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\host-manager] has finished in [49] ms
+06-Dec-2025 04:49:00.317 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] de la aplicación web
+06-Dec-2025 04:49:00.351 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\manager] has finished in [33] ms
+06-Dec-2025 04:49:00.351 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] de la aplicación web
+06-Dec-2025 04:49:00.375 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\ignac\git\eventosUy\apache-tomcat-11.0.13\webapps\ROOT] has finished in [24] ms
+06-Dec-2025 04:49:00.380 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+06-Dec-2025 04:49:00.400 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5171] milliseconds

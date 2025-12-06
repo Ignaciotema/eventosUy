@@ -11,7 +11,7 @@
 %>
 
 <!-- Componente de Categorías Lateral Reutilizable -->
-<div class="carta-categorias h-100">
+<div class="carta-categorias h-100 w-100">
 
     <!-- Lista de categorías -->
     <ul class="list-group w-100 overflow-auto text-center">

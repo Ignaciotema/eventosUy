@@ -50,7 +50,7 @@
 	
 	if (user == null) { %>
 	<header>
-		<nav class="navbar bg-white shadow-sm" style="height: 86px;">
+		<nav class="navbar bg-white shadow-sm d-none d-md-flex" style="height: 86px;">
 			<div>
 				<a class="fw-bold text-dark fs-2 m-4 text-decoration-none" href="HomeServlet"><b>Eventos.uy</b></a>
 			</div>
@@ -116,11 +116,92 @@
 				</a>
 			</div>
 		</nav>
+
+
+
+		<!-- Navbar Mobile !-->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none shadow-sm">
+  <div class="container-fluid">
+			<a class="fw-bold text-dark text-decoration-none navbar-brand" href="HomeServlet"><b>Eventos.uy</b></a>
+			<div class="w-auto">
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+
+    <div class="collapse navbar-collapse my-2" id="navbarTogglerDemo02">
+
+					<div class="header-auth mb-3 d-flex justify-content-center w-100">
+					<a href="iniciosesion" class="text-decoration-none">
+						<button type="button" class="button1 rounded-3">
+							<div class="header-button">Iniciar sesión</div>
+						</button>
+					</a> <a href="registro" class="text-decoration-none">
+						<button type="button" class="button2 rounded-3">
+							<div class="header-button">Regístrarse</div>
+						</button>
+					</a>
+				</div>
+<!-- Searchbar simplificada en el centro -->
+			<div class="text-center" style="flex: 1;">
+				<form action="<%=request.getContextPath()%>/eventos" method="get" class="d-flex justify-content-center align-items-center gap-2" style="max-width: 500px; margin: 0 auto;">
+					<input type="search" name="nombre" class="search flex-grow-1"
+					       placeholder="Buscar eventos o ediciones..." 
+					       value="<%=valorBusqueda%>">
+					<div class="dropdown">
+						<button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" 
+						        id="filtrosDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="bi bi-funnel"></i>
+						</button>
+						<div class="dropdown-menu p-3" style="min-width: 220px;">
+							<div class="mb-3">
+								<strong>Tipo:</strong>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tipo" value="" id="tipoAmbos"
+									       <%=(tipoFiltro == null || tipoFiltro.isEmpty()) ? "checked" : ""%>>
+									<label class="form-check-label" for="tipoAmbos">Ambos</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tipo" value="eventos" id="tipoEventos"
+									       <%="eventos".equals(tipoFiltro) ? "checked" : ""%>>
+									<label class="form-check-label" for="tipoEventos">Solo eventos</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tipo" value="ediciones" id="tipoEdiciones"
+									       <%="ediciones".equals(tipoFiltro) ? "checked" : ""%>>
+									<label class="form-check-label" for="tipoEdiciones">Solo ediciones</label>
+								</div>
+							</div>
+							<div class="mb-3">
+								<strong>Ordenar:</strong>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="orden" value="" id="ordenFecha"
+									       <%=(ordenamiento == null || ordenamiento.isEmpty()) ? "checked" : ""%>>
+									<label class="form-check-label" for="ordenFecha">Por fecha</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="orden" value="alfabetico" id="ordenAlfabetico"
+									       <%="alfabetico".equals(ordenamiento) ? "checked" : ""%>>
+									<label class="form-check-label" for="ordenAlfabetico">Alfabético</label>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary btn-sm w-100">Buscar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+    </div>
+  </div>
+</nav>
+
+
+
+
 	</header>
 	<% } else { %> 
 	
 	<header>
-		<nav class="navbar bg-white shadow-sm">
+		<nav class="navbar bg-white shadow-sm d-none d-md-flex">
 			<div>
 				<a class="fw-bold text-dark fs-2 m-4 text-decoration-none" href="HomeServlet"><b>Eventos.uy</b></a>
 			</div>
@@ -198,6 +279,107 @@
 				</div>
 			</div>
 		</nav>
+
+
+			<!-- Navbar Mobile !-->
+			<nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none shadow-sm">
+		<div class="container-fluid">
+				<a class="fw-bold text-dark text-decoration-none navbar-brand" href="HomeServlet"><b>Eventos.uy</b></a>
+				<div class="w-auto">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+
+		<div class="collapse navbar-collapse my-2" id="navbarTogglerDemo02">
+
+			<div class="d-flex justify-content-center align-items-center">
+				<div class="dropdown">
+				<div class="d-flex justify-content-center my-2">
+				<img
+					src="<%= session.getAttribute("pfp") %>" 
+					class="rounded-circle"
+					style="width: 60px; height: 60px; object-fit: cover; border: 1px solid rgba(0, 0, 0, .06);"></div>
+					
+					<div class="my-2"><%= user.getNombre() %></div>
+
+					<div class="header-auth mb-3 d-flex justify-content-center w-100 my-2">
+						<a href="perfil" class="text-decoration-none">
+							<button type="button" class="button1 rounded-3">
+								<div class="header-button">Mi perfil</div>
+							</button>
+						</a> <a href="cerrarsesion" class="text-decoration-none">
+							<button type="button" class="button2 rounded-3">
+								<div class="header-button">Cerrar sesión</div>
+							</button>
+						</a>
+					</div>
+					<!--
+					<ul class="dropdown-menu dropdown-menu-end shadow-sm"
+						aria-labelledby="userMenuDropdown">
+						<li><a class="dropdown-item" href="perfil">Mi
+								perfil</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item text-danger"
+							href="cerrarsesion"
+							style="color: #dc3545 !important;">Cerrar sesión</a></li>
+					</ul>	-->
+				</div>
+			</div>
+		<!-- Searchbar simplificada en el centro -->
+				<div class="text-center" style="flex: 1;">
+					<form action="<%=request.getContextPath()%>/eventos" method="get" class="d-flex justify-content-center align-items-center gap-2" style="max-width: 500px; margin: 0 auto;">
+						<input type="search" name="nombre" class="search flex-grow-1"
+								placeholder="Buscar eventos o ediciones..." 
+								value="<%=valorBusqueda%>">
+						<div class="dropdown">
+							<button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" 
+									id="filtrosDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+								<i class="bi bi-funnel"></i>
+							</button>
+							<div class="dropdown-menu p-3" style="min-width: 220px;">
+								<div class="mb-3">
+									<strong>Tipo:</strong>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="tipo" value="" id="tipoAmbos"
+												<%=(tipoFiltro == null || tipoFiltro.isEmpty()) ? "checked" : ""%>>
+										<label class="form-check-label" for="tipoAmbos">Ambos</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="tipo" value="eventos" id="tipoEventos"
+												<%="eventos".equals(tipoFiltro) ? "checked" : ""%>>
+										<label class="form-check-label" for="tipoEventos">Solo eventos</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="tipo" value="ediciones" id="tipoEdiciones"
+												<%="ediciones".equals(tipoFiltro) ? "checked" : ""%>>
+										<label class="form-check-label" for="tipoEdiciones">Solo ediciones</label>
+									</div>
+								</div>
+								<div class="mb-3">
+									<strong>Ordenar:</strong>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="orden" value="" id="ordenFecha"
+												<%=(ordenamiento == null || ordenamiento.isEmpty()) ? "checked" : ""%>>
+										<label class="form-check-label" for="ordenFecha">Por fecha</label>
+									</div>
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="orden" value="alfabetico" id="ordenAlfabetico"
+												<%="alfabetico".equals(ordenamiento) ? "checked" : ""%>>
+										<label class="form-check-label" for="ordenAlfabetico">Alfabético</label>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary btn-sm w-100">Buscar</button>
+							</div>
+						</div>
+					</form>
+				</div>
+		</div>
+		</div>
+		</nav>
+
 	</header>
 	<script src="assets/js/main.js"></script>
 	
