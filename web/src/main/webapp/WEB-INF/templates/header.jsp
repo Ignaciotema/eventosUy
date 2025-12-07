@@ -50,23 +50,20 @@
 	
 	if (user == null) { %>
 	<header>
-		<nav class="navbar bg-white shadow-sm d-none d-md-flex" style="height: 86px;">
+		<nav class="navbar bg-white shadow-sm d-none d-xl-flex" style="height: 86px;">
 			<div>
 				<a class="fw-bold text-dark fs-2 m-4 text-decoration-none" href="HomeServlet"><b>Eventos.uy</b></a>
 			</div>
 			
 			<!-- Searchbar simplificada en el centro -->
-			<div class="text-center" style="flex: 1;">
-				<form action="<%=request.getContextPath()%>/eventos" method="get" class="d-flex justify-content-center align-items-center gap-2" style="max-width: 500px; margin: 0 auto;">
-					<input type="search" name="nombre" class="search flex-grow-1"
+			<div class="input-group w-50 d-flex justify-content-center">
+				<form action="<%=request.getContextPath()%>/eventos" method="get" class="d-flex justify-content-center align-items-center w-100" style="max-width: 80%">
+					<input type="search" name="nombre" class="search flex-grow-1 rounded-end" 
 					       placeholder="Buscar eventos o ediciones..." 
 					       value="<%=valorBusqueda%>">
-					<div class="dropdown">
-						<button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" 
-						        id="filtrosDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-							<i class="bi bi-funnel"></i>
-						</button>
-						<div class="dropdown-menu p-3" style="min-width: 220px;">
+				</form>
+				<button class="btn btn-outline-secondary dropdown-toggle search d-flex justify-content-center" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="max-width:65px; min-width:65px;"><i class="bi bi-funnel"></i></button>
+				<ul class="dropdown-menu dropdown-menu-end p-3">
 							<div class="mb-3">
 								<strong>Tipo:</strong>
 								<div class="form-check">
@@ -99,9 +96,7 @@
 								</div>
 							</div>
 							<button type="submit" class="btn btn-primary btn-sm w-100">Buscar</button>
-						</div>
-					</div>
-				</form>
+				</ul>
 			</div>
 			
 			<div class="header-auth m-3 d-flex justify-content-end">
@@ -120,7 +115,7 @@
 
 
 		<!-- Navbar Mobile !-->
-		<nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none shadow-sm">
+		<nav class="navbar navbar-expand-xl bg-body-tertiary d-xl-none shadow-sm">
   <div class="container-fluid">
 			<a class="fw-bold text-dark text-decoration-none navbar-brand" href="HomeServlet"><b>Eventos.uy</b></a>
 			<div class="w-auto">
@@ -142,18 +137,15 @@
 						</button>
 					</a>
 				</div>
-<!-- Searchbar simplificada en el centro -->
-			<div class="text-center" style="flex: 1;">
-				<form action="<%=request.getContextPath()%>/eventos" method="get" class="d-flex justify-content-center align-items-center gap-2" style="max-width: 500px; margin: 0 auto;">
-					<input type="search" name="nombre" class="search flex-grow-1"
+			<!-- Searchbar simplificada en el centro -->
+			<div class="input-group w-100 d-flex justify-content-center">
+				<form action="<%=request.getContextPath()%>/eventos" method="get" class="d-flex justify-content-center align-items-center w-100" style="max-width: 80%">
+					<input type="search" name="nombre" class="search flex-grow-1 rounded-end" 
 					       placeholder="Buscar eventos o ediciones..." 
 					       value="<%=valorBusqueda%>">
-					<div class="dropdown">
-						<button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" 
-						        id="filtrosDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-							<i class="bi bi-funnel"></i>
-						</button>
-						<div class="dropdown-menu p-3" style="min-width: 220px;">
+				</form>
+				<button class="btn btn-outline-secondary dropdown-toggle search d-flex justify-content-center" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="max-width:65px; min-width:65px;"><i class="bi bi-funnel"></i></button>
+				<ul class="dropdown-menu dropdown-menu-end p-3">
 							<div class="mb-3">
 								<strong>Tipo:</strong>
 								<div class="form-check">
@@ -186,9 +178,7 @@
 								</div>
 							</div>
 							<button type="submit" class="btn btn-primary btn-sm w-100">Buscar</button>
-						</div>
-					</div>
-				</form>
+				</ul>
 			</div>
     </div>
   </div>
@@ -201,23 +191,20 @@
 	<% } else { %> 
 	
 	<header>
-		<nav class="navbar bg-white shadow-sm d-none d-md-flex">
+		<nav class="navbar bg-white shadow-sm d-none d-xl-flex">
 			<div>
 				<a class="fw-bold text-dark fs-2 m-4 text-decoration-none" href="HomeServlet"><b>Eventos.uy</b></a>
 			</div>
 			
 			<!-- Searchbar simplificada en el centro -->
-			<div class="text-center" style="flex: 1;">
-				<form action="<%=request.getContextPath()%>/eventos" method="get" class="d-flex justify-content-center align-items-center gap-2" style="max-width: 500px; margin: 0 auto;">
-					<input type="search" name="nombre" class="search flex-grow-1"
+			<div class="input-group w-50 d-flex justify-content-center">
+				<form action="<%=request.getContextPath()%>/eventos" method="get" class="d-flex justify-content-center align-items-center w-100" style="max-width: 80%">
+					<input type="search" name="nombre" class="search flex-grow-1 rounded-end" 
 					       placeholder="Buscar eventos o ediciones..." 
 					       value="<%=valorBusqueda%>">
-					<div class="dropdown">
-						<button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" 
-						        id="filtrosDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-							<i class="bi bi-funnel"></i>
-						</button>
-						<div class="dropdown-menu p-3" style="min-width: 220px;">
+				</form>
+				<button class="btn btn-outline-secondary dropdown-toggle search d-flex justify-content-center" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="max-width:65px; min-width:65px;"><i class="bi bi-funnel"></i></button>
+				<ul class="dropdown-menu dropdown-menu-end p-3">
 							<div class="mb-3">
 								<strong>Tipo:</strong>
 								<div class="form-check">
@@ -250,9 +237,7 @@
 								</div>
 							</div>
 							<button type="submit" class="btn btn-primary btn-sm w-100">Buscar</button>
-						</div>
-					</div>
-				</form>
+				</ul>
 			</div>
 			
 			<div class="d-flex justify-content-end align-items-center">
@@ -282,7 +267,7 @@
 
 
 			<!-- Navbar Mobile !-->
-			<nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none shadow-sm">
+			<nav class="navbar navbar-expand-xl bg-body-tertiary d-xl-none shadow-sm">
 		<div class="container-fluid">
 				<a class="fw-bold text-dark text-decoration-none navbar-brand" href="HomeServlet"><b>Eventos.uy</b></a>
 				<div class="w-auto">
@@ -328,54 +313,49 @@
 					</ul>	-->
 				</div>
 			</div>
-		<!-- Searchbar simplificada en el centro -->
-				<div class="text-center" style="flex: 1;">
-					<form action="<%=request.getContextPath()%>/eventos" method="get" class="d-flex justify-content-center align-items-center gap-2" style="max-width: 500px; margin: 0 auto;">
-						<input type="search" name="nombre" class="search flex-grow-1"
-								placeholder="Buscar eventos o ediciones..." 
-								value="<%=valorBusqueda%>">
-						<div class="dropdown">
-							<button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" 
-									id="filtrosDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-								<i class="bi bi-funnel"></i>
-							</button>
-							<div class="dropdown-menu p-3" style="min-width: 220px;">
-								<div class="mb-3">
-									<strong>Tipo:</strong>
-									<div class="form-check">
-										<input class="form-check-input" type="radio" name="tipo" value="" id="tipoAmbos"
-												<%=(tipoFiltro == null || tipoFiltro.isEmpty()) ? "checked" : ""%>>
-										<label class="form-check-label" for="tipoAmbos">Ambos</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="radio" name="tipo" value="eventos" id="tipoEventos"
-												<%="eventos".equals(tipoFiltro) ? "checked" : ""%>>
-										<label class="form-check-label" for="tipoEventos">Solo eventos</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="radio" name="tipo" value="ediciones" id="tipoEdiciones"
-												<%="ediciones".equals(tipoFiltro) ? "checked" : ""%>>
-										<label class="form-check-label" for="tipoEdiciones">Solo ediciones</label>
-									</div>
+			<!-- Searchbar simplificada en el centro -->
+			<div class="input-group w-100 d-flex justify-content-center">
+				<form action="<%=request.getContextPath()%>/eventos" method="get" class="d-flex justify-content-center align-items-center w-100" style="max-width: 80%">
+					<input type="search" name="nombre" class="search flex-grow-1 rounded-end" 
+					       placeholder="Buscar eventos o ediciones..." 
+					       value="<%=valorBusqueda%>">
+				</form>
+				<button class="btn btn-outline-secondary dropdown-toggle search d-flex justify-content-center" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="max-width:65px; min-width:65px;"><i class="bi bi-funnel"></i></button>
+				<ul class="dropdown-menu dropdown-menu-end p-3">
+							<div class="mb-3">
+								<strong>Tipo:</strong>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tipo" value="" id="tipoAmbos"
+									       <%=(tipoFiltro == null || tipoFiltro.isEmpty()) ? "checked" : ""%>>
+									<label class="form-check-label" for="tipoAmbos">Ambos</label>
 								</div>
-								<div class="mb-3">
-									<strong>Ordenar:</strong>
-									<div class="form-check">
-										<input class="form-check-input" type="radio" name="orden" value="" id="ordenFecha"
-												<%=(ordenamiento == null || ordenamiento.isEmpty()) ? "checked" : ""%>>
-										<label class="form-check-label" for="ordenFecha">Por fecha</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="radio" name="orden" value="alfabetico" id="ordenAlfabetico"
-												<%="alfabetico".equals(ordenamiento) ? "checked" : ""%>>
-										<label class="form-check-label" for="ordenAlfabetico">Alfabético</label>
-									</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tipo" value="eventos" id="tipoEventos"
+									       <%="eventos".equals(tipoFiltro) ? "checked" : ""%>>
+									<label class="form-check-label" for="tipoEventos">Solo eventos</label>
 								</div>
-								<button type="submit" class="btn btn-primary btn-sm w-100">Buscar</button>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tipo" value="ediciones" id="tipoEdiciones"
+									       <%="ediciones".equals(tipoFiltro) ? "checked" : ""%>>
+									<label class="form-check-label" for="tipoEdiciones">Solo ediciones</label>
+								</div>
 							</div>
-						</div>
-					</form>
-				</div>
+							<div class="mb-3">
+								<strong>Ordenar:</strong>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="orden" value="" id="ordenFecha"
+									       <%=(ordenamiento == null || ordenamiento.isEmpty()) ? "checked" : ""%>>
+									<label class="form-check-label" for="ordenFecha">Por fecha</label>
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="orden" value="alfabetico" id="ordenAlfabetico"
+									       <%="alfabetico".equals(ordenamiento) ? "checked" : ""%>>
+									<label class="form-check-label" for="ordenAlfabetico">Alfabético</label>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary btn-sm w-100">Buscar</button>
+				</ul>
+			</div>
 		</div>
 		</div>
 		</nav>
