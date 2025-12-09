@@ -1,7 +1,5 @@
 # EventosUY
 
-## 📋 Descripción del Proyecto
-
 **EventosUY** es una plataforma web para la gestión y organización de eventos en Uruguay. El proyecto permite a usuarios registrarse, crear eventos, seguir a otros organizadores, patrocinar eventos y registrarse como asistentes.
 
 ### Características Principales
